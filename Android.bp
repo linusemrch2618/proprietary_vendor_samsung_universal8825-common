@@ -6,7 +6,7 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-        name: "android.hardware.contexthub@1.0",
+        name: "android.hardware.contexthub@1.0.vendor",
         owner: "samsung",
         strip: {
                 none: true,
@@ -46,7 +46,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hidl.allocator@1.0",
+	name: "android.hidl.allocator@1.0.vendor",
 	owner: "samsung",
 	strip: {
 		none: true,
@@ -144,7 +144,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hardware.gnss@2.1",
+	name: "android.hardware.gnss@2.1.vendor",
 	owner: "samsung",
 	strip: {
 		none: true,
@@ -178,7 +178,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hardware.radio.deprecated@1.0",
+	name: "android.hardware.radio.deprecated@1.0.vendor",
 	owner: "samsung",
 	strip: {
 		none: true,

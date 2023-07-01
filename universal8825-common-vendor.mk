@@ -1126,17 +1126,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/vintf-codecsolution-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vintf-codecsolution-V2-ndk_platform.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/vndk/libaudioroute.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vndk/libaudioroute.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/vndk/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vndk/libtinyalsa.so \
-    vendor/samsung/universal8825-common/proprietary/vendor/odm_dlkm/etc/NOTICE.xml.gz:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/NOTICE.xml.gz \
-    vendor/samsung/universal8825-common/proprietary/vendor/odm_dlkm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/build.prop \
-    vendor/samsung/universal8825-common/proprietary/vendor/recovery-from-boot.p:$(TARGET_COPY_OUT_VENDOR)/recovery-from-boot.p \
-    vendor/samsung/universal8825-common/proprietary/vendor/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tf:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tf \
-    vendor/samsung/universal8825-common/proprietary/vendor/saiv/image_understanding/db/aig_detector/aig_detector_cnn.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/aig_detector/aig_detector_cnn.tflite \
-    vendor/samsung/universal8825-common/proprietary/vendor/saiv/image_understanding/db/sce_detector/sce_detector_cnn.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/sce_detector/sce_detector_cnn.tflite \
-    vendor/samsung/universal8825-common/proprietary/vendor/saiv/image_understanding/db/slens_classifier/slens_classifier_cnn.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/slens_classifier/slens_classifier_cnn.tflite \
-    vendor/samsung/universal8825-common/proprietary/vendor/saiv/image_understanding/db/slens_detector/slens_detector_cnn.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/slens_detector/slens_detector_cnn.tflite \
-    vendor/samsung/universal8825-common/proprietary/vendor/saiv/image_understanding/db/srr_interaction/srr_interaction_cnn.tf:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/srr_interaction/srr_interaction_cnn.tf \
-    vendor/samsung/universal8825-common/proprietary/vendor/saiv/sr_engine_model/All_mnetv2_mini_p256x256_b16_00834_20210809.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/sr_engine_model/All_mnetv2_mini_p256x256_b16_00834_20210809.tflite \
-    vendor/samsung/universal8825-common/proprietary/vendor/saiv/sr_engine_model/nima_crop_pair_v0.0.2_mobilenetv2.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/sr_engine_model/nima_crop_pair_v0.0.2_mobilenetv2.tflite
 
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0.vendor \

@@ -245,7 +245,6 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-
 prebuilt_etc {
 	name: "android.hardware.graphics.allocator@4.0-service",
 	owner: "samsung",

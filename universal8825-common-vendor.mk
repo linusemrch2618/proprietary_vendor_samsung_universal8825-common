@@ -1144,7 +1144,6 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhwbinder \
     libkeymaster4_1support \
-    org.carconnectivity.android.digitalkey.timesync \
     android.hardware.graphics.allocator@4.0-service \
     android.hardware.graphics.composer@2.4-service \
     init.gps \

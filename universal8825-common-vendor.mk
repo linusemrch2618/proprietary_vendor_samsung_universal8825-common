@@ -1127,6 +1127,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/vndk/libaudioroute.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vndk/libaudioroute.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/vndk/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vndk/libtinyalsa.so \
 
+PRODUCT_COPY_FILES += \
+    vendor/samsung/universal8825-common/proprietary/recovery/ramdisk/vendor/firmware/gt9895_a53x.bin:$(TARGET_COPY_OUT_RECOVERY)/ramdisk/vendor/firmware/gt9895_a53x.bin
+
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0.vendor \
     android.hardware.thermal@2.0 \

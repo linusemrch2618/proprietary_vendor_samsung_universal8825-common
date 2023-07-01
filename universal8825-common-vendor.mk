@@ -6,20 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/universal8825-common
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal8825-common/proprietary/recovery/ramdisk/vendor/firmware/gt9895_a53x.bin:$(TARGET_COPY_OUT_RECOVERY)/ramdisk/vendor/firmware/gt9895_a53x.bin \
-    vendor/samsung/universal8825-common/proprietary/system_ext/apex/com.android.vndk.v30.apex.aa:$(TARGET_COPY_OUT_SYSTEM_EXT)/apex/com.android.vndk.v30.apex.aa \
-    vendor/samsung/universal8825-common/proprietary/system_ext/apex/com.android.vndk.v30.apex.ab:$(TARGET_COPY_OUT_SYSTEM_EXT)/apex/com.android.vndk.v30.apex.ab \
-    vendor/samsung/universal8825-common/proprietary/system_ext/apex/com.android.vndk.v30.apex.ac:$(TARGET_COPY_OUT_SYSTEM_EXT)/apex/com.android.vndk.v30.apex.ac \
-    vendor/samsung/universal8825-common/proprietary/system_ext/apex/com.android.vndk.v31.apex:$(TARGET_COPY_OUT_SYSTEM_EXT)/apex/com.android.vndk.v31.apex \
-    vendor/samsung/universal8825-common/proprietary/system_ext/etc/build.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/build.prop \
-    vendor/samsung/universal8825-common/proprietary/system_ext/etc/group:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/group \
-    vendor/samsung/universal8825-common/proprietary/system_ext/etc/permissions/com.android.carrierconfig.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.carrierconfig.xml \
-    vendor/samsung/universal8825-common/proprietary/system_ext/etc/permissions/com.android.storagemanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.storagemanager.xml \
-    vendor/samsung/universal8825-common/proprietary/system_ext/etc/permissions/com.android.systemui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.systemui.xml \
-    vendor/samsung/universal8825-common/proprietary/system_ext/etc/permissions/com.samsung.systemui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.samsung.systemui.xml \
-    vendor/samsung/universal8825-common/proprietary/system_ext/etc/permissions/privapp-permissions-google-system-ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-system-ext.xml \
-    vendor/samsung/universal8825-common/proprietary/system_ext/lib/vendor.samsung.hardware.miscpower@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.samsung.hardware.miscpower@2.0.so \
-    vendor/samsung/universal8825-common/proprietary/system_ext/lib64/vendor.samsung.hardware.miscpower@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.samsung.hardware.miscpower@2.0.so \
     vendor/samsung/universal8825-common/proprietary/vendor/apex/com.samsung.android.authfw.ta.preload.apex:$(TARGET_COPY_OUT_VENDOR)/apex/com.samsung.android.authfw.ta.preload.apex \
     vendor/samsung/universal8825-common/proprietary/vendor/apex/com.samsung.android.camera.unihal.signed.apex:$(TARGET_COPY_OUT_VENDOR)/apex/com.samsung.android.camera.unihal.signed.apex \
     vendor/samsung/universal8825-common/proprietary/vendor/app/mcRegistry/00060308060501020000000000000000.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/00060308060501020000000000000000.tabin \
@@ -1166,14 +1152,6 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhwbinder \
     libkeymaster4_1support \
-    CarrierConfig \
-    DckTimeSyncService \
-    GoogleFeedback \
-    GoogleServicesFramework \
-    SetupWizard \
-    StorageManager \
-    SystemUI \
-    WallpaperCropper \
     org.carconnectivity.android.digitalkey.timesync \
     android.hardware.graphics.allocator@4.0-service \
     android.hardware.graphics.composer@2.4-service \

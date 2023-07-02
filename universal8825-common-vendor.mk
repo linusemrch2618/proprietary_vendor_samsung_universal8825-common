@@ -1122,7 +1122,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/saiv/sr_engine_model/nima_crop_pair_v0.0.2_mobilenetv2.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/sr_engine_model/nima_crop_pair_v0.0.2_mobilenetv2.tflite
 
 PRODUCT_PACKAGES += \
-    android.hardware.contexthub@1.0.vendor
+    android.hardware.contexthub@1.0.vendor \
     android.hardware.thermal@2.0 \
     android.hidl.allocator@1.0.vendor \
     audio.r_submix.default \

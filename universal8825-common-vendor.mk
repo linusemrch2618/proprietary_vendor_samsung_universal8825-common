@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/universal8825-common
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/universal8825-common/proprietary/recovery/ramdisk/vendor/firmware/gt9895_a53x.bin:$(TARGET_COPY_OUT_RECOVERY)/ramdisk/vendor/firmware/gt9895_a53x.bin \
     vendor/samsung/universal8825-common/proprietary/vendor/apex/com.samsung.android.authfw.ta.preload.apex:$(TARGET_COPY_OUT_VENDOR)/apex/com.samsung.android.authfw.ta.preload.apex \
     vendor/samsung/universal8825-common/proprietary/vendor/apex/com.samsung.android.camera.unihal.signed.apex:$(TARGET_COPY_OUT_VENDOR)/apex/com.samsung.android.camera.unihal.signed.apex \
     vendor/samsung/universal8825-common/proprietary/vendor/app/mcRegistry/00060308060501020000000000000000.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/00060308060501020000000000000000.tabin \
@@ -146,7 +147,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/init/face-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/face-default-sec.rc \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/init/hyper-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hyper-default-sec.rc \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
-    vendor/samsung/universal8825-common/proprietary/vendor/etc/init/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/init/init.ramplus.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ramplus.rc \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/init/init.s5e8825.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.s5e8825.rc \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/init/init.s5e8825.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.s5e8825.usb.rc \
@@ -197,21 +197,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/init/wifi_slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_slsi.rc \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/init/wsm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wsm-service.rc \
-    vendor/samsung/universal8825-common/proprietary/vendor/etc/libse-gto-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libse-gto-hal.conf \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/linker.config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/linker.config.pb \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/locale/plmn_delta_eng.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_eng.bin \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/locale/plmn_delta_zh-rCN.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rCN.bin \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/locale/plmn_delta_zh-rHK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rHK.bin \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/locale/plmn_delta_zh-rTW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rTW.bin \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/mercury.json:$(TARGET_COPY_OUT_VENDOR)/etc/mercury.json \
-    vendor/samsung/universal8825-common/proprietary/vendor/etc/midas/SRIBMidas_aiBLURDETECT_Stage1_FP32_V140.caffemodel:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiBLURDETECT_Stage1_FP32_V140.caffemodel \
-    vendor/samsung/universal8825-common/proprietary/vendor/etc/midas/SRIBMidas_aiBLURDETECT_Stage2_FP32_V130.caffemodel:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiBLURDETECT_Stage2_FP32_V130.caffemodel \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/midas/SRIBMidas_aiDEBLUR_INT16_V0132_olympus_eden167.nnc:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiDEBLUR_INT16_V0132_olympus_eden167.nnc \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/midas/SRIBMidas_aiDENOISE_FP16_V900.caffemodel:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiDENOISE_FP16_V900.caffemodel \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/midas/SRIBMidas_aiHDR_Global_INT16_V430_1024_olympus_eden167.nnc:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiHDR_Global_INT16_V430_1024_olympus_eden167.nnc \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/midas/SRIBMidas_aiHDR_Local_INT16_V430_1024_olympus_eden167.nnc:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiHDR_Local_INT16_V430_1024_olympus_eden167.nnc \
-    vendor/samsung/universal8825-common/proprietary/vendor/etc/midas/SRIBMidas_aiMOIREREMOVE_Coarse_INT16_V810_papaya_eden411.nnc:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiMOIREREMOVE_Coarse_INT16_V810_papaya_eden411.nnc \
-    vendor/samsung/universal8825-common/proprietary/vendor/etc/midas/SRIBMidas_aiMOIREREMOVE_Fine_INT16_V810_papaya_eden411.nnc:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiMOIREREMOVE_Fine_INT16_V810_papaya_eden411.nnc \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/midas/SRIBMidas_aiUNIFIED_INT16_V610_papaya_eden411.nnc:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiUNIFIED_INT16_V610_papaya_eden411.nnc \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/midas/midas_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/midas/midas_config.json \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/mixer_gains.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_gains.xml \
@@ -228,8 +223,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/portrait_data/SRIB_HumanSegVideoLite_INT8_V101_ex8825_enn2014b_vendor.nnc:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/SRIB_HumanSegVideoLite_INT8_V101_ex8825_enn2014b_vendor.nnc \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/saiv/aisolution_1.0/BrightModel-timestamp:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/aisolution_1.0/BrightModel-timestamp \
-    vendor/samsung/universal8825-common/proprietary/vendor/etc/saiv/aisolution_1.0/PAPAYA_0731.nnc.aa:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/aisolution_1.0/PAPAYA_0731.nnc.aa \
-    vendor/samsung/universal8825-common/proprietary/vendor/etc/saiv/aisolution_1.0/PAPAYA_0731.nnc.ab:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/aisolution_1.0/PAPAYA_0731.nnc.ab \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/saiv/gae/MeanFea.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/MeanFea.bin \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/saiv/gae/ParaFea.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/ParaFea.bin \
     vendor/samsung/universal8825-common/proprietary/vendor/etc/saiv/gae/PmAgeFeatSelIdx.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/PmAgeFeatSelIdx.bin \
@@ -358,7 +351,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/android.hardware.sensors@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.0.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/android.hardware.sensors@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.1.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/android.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.thermal@1.0.so \
-    vendor/samsung/universal8825-common/proprietary/vendor/lib/android.hidl.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.allocator@1.0.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V1-ndk_platform.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/audio_common-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/audio_common-aidl-cpp.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/audioclient-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/audioclient-types-aidl-cpp.so \
@@ -468,6 +460,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libepic_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libepic_helper.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libepicoperator.so:$(TARGET_COPY_OUT_VENDOR)/lib/libepicoperator.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libexifa.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexifa.camera.samsung.so \
+    vendor/samsung/universal8825-common/proprietary/vendor/lib/libexynos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynos.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera3.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libexynoscamera_cnr_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera_cnr_plugin.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libexynoscamera_merta_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera_merta_plugin.so \
@@ -515,7 +508,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libmultiobject_tracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmultiobject_tracker.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libopus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopus.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libpadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpadm.so \
-    vendor/samsung/universal8825-common/proprietary/vendor/lib/libpassese.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpassese.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libpredeflicker_native.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpredeflicker_native.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libprofileparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprofileparamstorage.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libprotobuf-cpp-full-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-full-3.9.1.so \
@@ -527,7 +519,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libsavsvc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsavsvc.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libscaler_hw.unifunc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscaler_hw.unifunc.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libscenedetector.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscenedetector.uniplugin@1.0.so \
-    vendor/samsung/universal8825-common/proprietary/vendor/lib/libsec_semRil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec_semRil.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudiocoreutils.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudioinfo.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libsecfr_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecfr_engine.so \
@@ -552,7 +543,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libsocial_image_enhancement.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsocial_image_enhancement.uniplugin@1.0.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libspatializerparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspatializerparamstorage.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libspeakercalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeakercalibration.so \
-    vendor/samsung/universal8825-common/proprietary/vendor/lib/libspictrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspictrl.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libsrib_CNNInterface.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsrib_CNNInterface.camera.samsung.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libsrib_humanaware_engine.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsrib_humanaware_engine.camera.samsung.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib/libssengine.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssengine.uniplugin@1.0.so \
@@ -697,6 +687,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/android.hardware.health@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.health@2.0.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/android.hardware.health@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.health@2.1.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/android.hardware.keymaster@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.keymaster@3.0.so \
+    vendor/samsung/universal8825-common/proprietary/vendor/lib64/android.hardware.keymaster@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.keymaster@4.0.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/android.hardware.keymaster@4.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.keymaster@4.1.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/android.hardware.media.c2@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.media.c2@1.0.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/android.hardware.media.c2@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.media.c2@1.1.so \
@@ -737,7 +728,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/android.hardware.wifi@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi@1.3.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/android.hardware.wifi@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi@1.4.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/android.hardware.wifi@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi@1.5.so \
-    vendor/samsung/universal8825-common/proprietary/vendor/lib64/android.hidl.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hidl.allocator@1.0.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/android.system.wifi.keystore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.system.wifi.keystore@1.0.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V1-ndk_platform.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/audio_common-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/audio_common-aidl-cpp.so \
@@ -913,10 +903,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libhandgesture.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhandgesture.arcsoft.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libhdr10p_meta_plugin_default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr10p_meta_plugin_default.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libhdr_plugin_exynos8825.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_plugin_exynos8825.so \
-    vendor/samsung/universal8825-common/proprietary/vendor/lib64/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidltransport.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libhigh_dynamic_range_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhigh_dynamic_range_bokeh.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libhqm_hwparam.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhqm_hwparam.so \
-    vendor/samsung/universal8825-common/proprietary/vendor/lib64/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwbinder.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libhwjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwjpeg.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libhwjsqz.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwjsqz.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libhyper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhyper.so \
@@ -929,6 +917,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libion_exynos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_exynos.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libir.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libir.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libjpegencoder_sw.unifunc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpegencoder_sw.unifunc.so \
+    vendor/samsung/universal8825-common/proprietary/vendor/lib64/libkeymaster4_1support.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster4_1support.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libkeymaster4support.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster4support.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libkeymaster_messages.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_messages.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_portable.so \
@@ -952,7 +941,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libnpuc_template.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnpuc_template.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libpadm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpadm.so \
-    vendor/samsung/universal8825-common/proprietary/vendor/lib64/libpassese.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpassese.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libprofileparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprofileparamstorage.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libprotobuf-cpp-full-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-3.9.1.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-3.9.1.so \
@@ -967,8 +955,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libscenedetector.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscenedetector.uniplugin@1.0.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libsec2lsi_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec2lsi_conversion.so \
-    vendor/samsung/universal8825-common/proprietary/vendor/lib64/libsec_semHalTlc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec_semHalTlc.so \
-    vendor/samsung/universal8825-common/proprietary/vendor/lib64/libsec_semRil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec_semRil.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libsec_skpmHalTlc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec_skpmHalTlc.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudiocoreutils.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudioinfo.so \
@@ -1003,7 +989,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libsomxcmn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxcmn.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libspatializerparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspatializerparamstorage.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libspeakercalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeakercalibration.so \
-    vendor/samsung/universal8825-common/proprietary/vendor/lib64/libspictrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspictrl.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libsrib_CNNInterface.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsrib_CNNInterface.camera.samsung.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libsrib_humanaware_engine.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsrib_humanaware_engine.camera.samsung.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libssengine.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssengine.uniplugin@1.0.so \
@@ -1013,7 +998,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libstork_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstork_shared.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libswcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswcnr.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libswlme.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswlme.so \
-    vendor/samsung/universal8825-common/proprietary/vendor/lib64/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynaFpSensorTestNwd.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libtad.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtad.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libteecl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteecl.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/libtextclassifier_hash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtextclassifier_hash.so \
@@ -1126,24 +1110,29 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/vintf-codecsolution-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vintf-codecsolution-V2-ndk_platform.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/vndk/libaudioroute.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vndk/libaudioroute.so \
     vendor/samsung/universal8825-common/proprietary/vendor/lib64/vndk/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vndk/libtinyalsa.so \
-
-PRODUCT_COPY_FILES += \
-    vendor/samsung/universal8825-common/proprietary/recovery/ramdisk/vendor/firmware/gt9895_a53x.bin:$(TARGET_COPY_OUT_RECOVERY)/ramdisk/vendor/firmware/gt9895_a53x.bin
+    vendor/samsung/universal8825-common/proprietary/vendor/odm_dlkm/etc/NOTICE.xml.gz:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/NOTICE.xml.gz \
+    vendor/samsung/universal8825-common/proprietary/vendor/odm_dlkm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/build.prop \
+    vendor/samsung/universal8825-common/proprietary/vendor/recovery-from-boot.p:$(TARGET_COPY_OUT_VENDOR)/recovery-from-boot.p \
+    vendor/samsung/universal8825-common/proprietary/vendor/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tf:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tf \
+    vendor/samsung/universal8825-common/proprietary/vendor/saiv/image_understanding/db/aig_detector/aig_detector_cnn.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/aig_detector/aig_detector_cnn.tflite \
+    vendor/samsung/universal8825-common/proprietary/vendor/saiv/image_understanding/db/sce_detector/sce_detector_cnn.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/sce_detector/sce_detector_cnn.tflite \
+    vendor/samsung/universal8825-common/proprietary/vendor/saiv/image_understanding/db/slens_classifier/slens_classifier_cnn.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/slens_classifier/slens_classifier_cnn.tflite \
+    vendor/samsung/universal8825-common/proprietary/vendor/saiv/image_understanding/db/slens_detector/slens_detector_cnn.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/slens_detector/slens_detector_cnn.tflite \
+    vendor/samsung/universal8825-common/proprietary/vendor/saiv/sr_engine_model/All_mnetv2_mini_p256x256_b16_00834_20210809.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/sr_engine_model/All_mnetv2_mini_p256x256_b16_00834_20210809.tflite \
+    vendor/samsung/universal8825-common/proprietary/vendor/saiv/sr_engine_model/nima_crop_pair_v0.0.2_mobilenetv2.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/sr_engine_model/nima_crop_pair_v0.0.2_mobilenetv2.tflite
 
 PRODUCT_PACKAGES += \
-    android.hardware.contexthub@1.0.vendor \
+    android.hardware.contexthub@1.0.vendor
     android.hardware.thermal@2.0 \
     android.hidl.allocator@1.0.vendor \
     audio.r_submix.default \
     audio.usb.default \
     android.hardware.graphics.allocator@4.0-impl \
     android.hardware.graphics.mapper@4.0-impl \
-    android.hardware.gnss@2.1.vendor\
-    android.hardware.keymaster@4.0 \
+    android.hardware.gnss@2.1.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     libhidltransport \
     libhwbinder \
-    libkeymaster4_1support \
     android.hardware.graphics.allocator@4.0-service \
     android.hardware.graphics.composer@2.4-service \
     init.gps \

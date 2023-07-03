@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/universal8825-common
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal8825-common/proprietary/recovery/ramdisk/vendor/firmware/gt9895_a53x.bin:$(TARGET_COPY_OUT_RECOVERY)/ramdisk/vendor/firmware/gt9895_a53x.bin \
     vendor/samsung/universal8825-common/proprietary/vendor/apex/com.samsung.android.authfw.ta.preload.apex:$(TARGET_COPY_OUT_VENDOR)/apex/com.samsung.android.authfw.ta.preload.apex \
     vendor/samsung/universal8825-common/proprietary/vendor/apex/com.samsung.android.camera.unihal.signed.apex:$(TARGET_COPY_OUT_VENDOR)/apex/com.samsung.android.camera.unihal.signed.apex \
     vendor/samsung/universal8825-common/proprietary/vendor/app/mcRegistry/00060308060501020000000000000000.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/00060308060501020000000000000000.tabin \
